@@ -23,14 +23,13 @@
  */
 
 #define BASE      0
-#define KEYPAD    1
+#define QWERTY    1
 #define FN        2
 #define MOD       3
-#define QWERTY    4
-#define MOUSE     5
-#define NAV       6
-#define SYMBOLS   7
-#define EXTRA8    8
+#define MOUSE     4
+#define NAV       5
+#define SYMBOLS   6
+#define EXTRA7    7
 
 / {
     behaviors {
@@ -54,7 +53,7 @@
         Base {
             display-name = "Base";
             bindings = <
-&kp EQUAL  &kp N1     &kp N2    &kp N3    &kp N4     &kp N5  &trans                                                                   &mo 3      &kp N6  &kp N7  &kp N8     &kp N9    &kp N0    &kp MINUS
+&kp EQUAL  &kp N1     &kp N2    &kp N3    &kp N4     &kp N5  &none                                                                    &mo 3      &kp N6  &kp N7  &kp N8     &kp N9    &kp N0    &kp MINUS
 &kp TAB    &kp Q      &kp W     &kp F     &kp P      &kp B   &tog 1                                                                   &tog 1     &kp J   &kp L   &kp U      &kp Y     &kp SEMI  &kp LBKT
 &kp NUHS   &kp A      &kp R     &kp S     &kp T      &kp G   &to 4              &kp LCTRL  &kp LALT    &kp LGUI  &kp RCTRL            &kp KP_N4  &kp M   &kp N   &kp E      &kp I     &kp O     &kp SQT
 &kp LSHFT  &kp Z      &kp X     &kp C     &kp D      &kp V                                 &kp TAB     &kp ESC                                   &kp K   &kp H   &kp COMMA  &kp DOT   &kp FSLH  &kp RSHFT
